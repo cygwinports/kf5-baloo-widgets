@@ -1,0 +1,21 @@
+inherit kf5
+
+NAME="kf5-baloo-widgets"
+VERSION=16.08.3
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE 5 file indexing GUI library"
+DESCRIPTION="Baloo provides file searching and indexing. It does so by
+maintaining an index of the contents of your files."
+
+PKG_NAMES="libKF5BalooWidgets5 libKF5BalooWidgets-devel"
+libKF5BalooWidgets5_CONTENTS="
+	usr/bin/cygKF5BalooWidgets-5.dll
+	usr/share/doc/
+"
+libKF5BalooWidgets_devel_REQUIRES="libKF5Baloo-devel libKF5KIO-devel libQt5Gui-devel"
+libKF5BalooWidgets_devel_CONTENTS="
+	usr/include/KF5/BalooWidgets/
+	usr/lib/cmake/KF5BalooWidgets/
+	usr/lib/libKF5BalooWidgets.dll.a
+"
