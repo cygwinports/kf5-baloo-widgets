@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-baloo-widgets"
-VERSION=16.08.3
+VERSION=17.04.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 file indexing GUI library"
@@ -11,7 +11,9 @@ maintaining an index of the contents of your files."
 PKG_NAMES="libKF5BalooWidgets5 libKF5BalooWidgets-devel"
 libKF5BalooWidgets5_CONTENTS="
 	usr/bin/cygKF5BalooWidgets-5.dll
+	usr/bin/baloo_filemetadata_temp_extractor.exe
 	usr/share/doc/
+	usr/share/locale/*/LC_MESSAGES/baloo*.mo
 "
 libKF5BalooWidgets_devel_REQUIRES="libKF5Baloo-devel libKF5KIO-devel libQt5Gui-devel"
 libKF5BalooWidgets_devel_CONTENTS="
